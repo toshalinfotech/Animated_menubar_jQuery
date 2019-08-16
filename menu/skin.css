@@ -1,0 +1,157 @@
+/********************************************************************/
+/* Website Developed by : Blue Sombrero 							*/
+/********************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main .sub {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  height: 400px;
+  width: 150px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Bree Serif', serif;
+  transition: 1s;
+}
+
+.main i {
+  font-size: 80px;
+  margin: 20px;
+}
+
+.main h3 {
+  font-size: 20px;
+}
+
+.main .a1 {
+  background-color: #9400D3;
+}
+
+.main .a2 {
+  background-color: #4B0082;
+}
+
+.main .a3 {
+  background-color: #0000FF;
+}
+
+.main .a4 {
+  background-color: #00FF00;
+}
+
+.main .a5 {
+  background-color: #FFFF00;
+}
+
+.main .a6 {
+  background-color: #FF7F00;
+}
+
+.main .a7 {
+  background-color: #FF0000;
+}
+
+.main .a8 {
+  background-color: #5f5e5e;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+  font-family: cambria;
+  text-shadow: 0 0 15px #000;
+  color: #fff;
+}
+
+.main .a8 .suba8 {
+  height: 20px;
+  width: 20px;
+  background: linear-gradient(#D3D3D3, #808080);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: normal;
+}
+
+.add .a1 {
+  transform: rotate(60deg);
+  transform-origin: bottom;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.add .a1:hover {
+  transform: rotate(70deg);
+}
+
+.add .a2 {
+  transform: rotate(40deg);
+  transform-origin: bottom;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.add .a2:hover {
+  transform: rotate(50deg);
+}
+
+.add .a3 {
+  transform: rotate(20deg);
+  transform-origin: bottom;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.add .a3:hover {
+  transform: rotate(30deg);
+}
+
+.add .a4 {
+  transform: rotate(0deg);
+  transform-origin: bottom;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.add .a4:hover {
+  transform: rotate(10deg);
+}
+
+.add .a5 {
+  transform: rotate(-20deg);
+  transform-origin: bottom;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.add .a5:hover {
+  transform: rotate(-10deg);
+}
+
+.add .a6 {
+  transform: rotate(-40deg);
+  transform-origin: bottom;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.add .a6:hover {
+  transform: rotate(-30deg);
+}
+
+.add .a7 {
+  transform: rotate(-60deg);
+  transform-origin: bottom;
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.5);
+}
+
+.add .a7:hover {
+  transform: rotate(-50deg);
+}
+
+.add .a8 {
+  transform: rotate(-80deg);
+  transform-origin: bottom;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+}
