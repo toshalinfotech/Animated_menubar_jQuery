@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
 }
-.main {
-    .sub {
+.skMainWrapper {
+    .skBlock {
         position: absolute;
         top: 15%;
         left: 50%;
@@ -17,7 +17,6 @@
         font-size: 30px;
         font-family: 'Bree Serif', serif;
         transition: 1s;
-
     }
 
     i {
@@ -29,43 +28,43 @@
         font-size: 20px;
     }
 
-    .a1 {
+    .skSetting {
         background-color: #9400D3;
     }
 
-    .a2 {
+    .skServices {
         background-color: #4B0082;
 
     }
 
-    .a3 {
+    .skProducts {
         background-color: #0000FF;
     }
 
-    .a4 {
+    .skLogout {
         background-color: #00FF00;
     }
 
-    .a5 {
+    .skGallery {
         background-color: #FFFF00;
     }
 
-    .a6 {
+    .skAbout {
         background-color: #FF7F00;
     }
 
-    .a7 {
+    .skContact {
         background-color: #FF0000;
     }
 
-    .a8 {
+    .skOpen {
         background-color: #5f5e5e;
         box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
         font-family: cambria;
         text-shadow: 0 0 15px #000;
         color: #fff;
 
-        .suba8 {
+        .skJoin {
             height: 20px;
             width: 20px;
             background: linear-gradient(#D3D3D3, #808080);
@@ -80,10 +79,12 @@
     }
 }
 
-.add {
-    .a1 {
-        transform: rotate(60deg);
+.skSwipe {
+    .skBlock{
         transform-origin: bottom;
+    }
+    .skSetting {
+        transform: rotate(60deg);
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 
         &:hover {
@@ -91,9 +92,8 @@
         }
     }
 
-    .a2 {
+    .skServices {
         transform: rotate(40deg);
-        transform-origin: bottom;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
         &:hover {
@@ -101,60 +101,43 @@
         }
     }
 
-    .a3 {
+    .skProducts {
         transform: rotate(20deg);
-        transform-origin: bottom;
         box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
-
         &:hover {
             transform: rotate(30deg);
         }
     }
-
-    .a4 {
+    .skLogout {
         transform: rotate(0deg);
-        transform-origin: bottom;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-
         &:hover {
             transform: rotate(10deg);
         }
     }
-
-    .a5 {
+    .skGallery {
         transform: rotate(-20deg);
-        transform-origin: bottom;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
-
         &:hover {
             transform: rotate(-10deg);
         }
     }
-
-    .a6 {
+    .skAbout {
         transform: rotate(-40deg);
-        transform-origin: bottom;
         box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
-
         &:hover {
             transform: rotate(-30deg);
         }
     }
-
-    .a7 {
+    .skContact {
         transform: rotate(-60deg);
-        transform-origin: bottom;
         box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.5);
-
         &:hover {
             transform: rotate(-50deg);
         }
     }
-
-    .a8 {
+    .skOpen {
         transform: rotate(-80deg);
-        transform-origin: bottom;
         box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
-
     }
 }

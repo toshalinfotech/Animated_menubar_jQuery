@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: #8c7373;
 }
-.main {
+
+.skMenuBar {
     height: 200px;
     width: 200px;
     background: #000;
@@ -16,6 +18,7 @@ body{
     left: -100px;
     top: -100px;
     transition: .3s;
+
     .icon {
         width: 200px;
         height: 200px;
@@ -23,6 +26,7 @@ body{
         bottom: 0;
         right: 0;
         cursor: pointer;
+
         span {
             height: 5px;
             width: 30px;
@@ -46,27 +50,9 @@ body{
     }
 
 }
-.cross {
-    span {
-        transform: translateY(10px);
 
-        &:first-child {
-            background: none;
-        }
 
-        &:last-child {
-            transform: rotate(45deg)translate(4px);
-            transform-origin: bottom;
-        }
-
-        &:nth-child(2) {
-            transform: rotate(-45deg)translate(10px);
-            transform-origin: bottom;
-        }
-    }
-}
-
-.sub {
+.skCircular {
     height: 400px;
     width: 400px;
     background: #c0c0c0;
@@ -77,58 +63,94 @@ body{
     left: -400px;
     transform: rotate(45deg);
     transition: .8s;
+
     // transform-origin: left top;
-    ul{
-    li {
-        position: absolute;
-        display: inline-block;
-        transform: translateX(50%);
-        font-size: 30px;
-        cursor: pointer;
-        &:first-child{
-            top: 210px;
-            right: 50px;
-        }
-        &:nth-child(2){
-            top: 276px;
-            right: 90px;
-        }
-        &:last-child{
-            top: 330px;
-            right: 170px;
-        }
-        i{
-            &:hover{
-                color: #540d0d;
+    ul {
+        li {
+            position: absolute;
+            display: inline-block;
+            transform: translateX(50%);
+            font-size: 30px;
+            cursor: pointer;
+
+            &:first-child {
+                top: 210px;
+                right: 50px;
+            }
+
+            &:nth-child(2) {
+                top: 276px;
+                right: 90px;
+            }
+
+            &:last-child {
+                top: 330px;
+                right: 170px;
+            }
+
+            i {
+                &:hover {
+                    color: #540d0d;
+                }
             }
         }
+
+        &:nth-child(2) {
+            transform: translateX(-195px) translateY(194px) rotate(-90deg);
+        }
     }
-    &:nth-child(2){
-        // transform: translateX(-199px) translateY(187px) rotate(-90deg);
-        transform: translateX(-195px) translateY(194px) rotate(-90deg);
-    }
-}
 }
 
-.subRotate {
-    transform: rotate(0deg);
-    top: -200px;
-    left: -200px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-.arrow{
+.skArrow {
     position: absolute;
     left: 230px;
     font-size: 25px;
     cursor: pointer;
+    opacity: 0;
+    transition: 0.8s;
+
 }
-.arrowSubRotate{
+
+.mainwrapperscale .skCircular.arrowSubRotate {
     transform: rotate(90deg);
     transform-origin: center;
 }
-.mainScale{
-    left: -110px;
-    top: -110px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+.mainwrapperscale {
+    .skMenuBar {
+        left: -110px;
+        top: -110px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        .icon {
+            span {
+                transform: translateY(10px);
+
+                &:first-child {
+                    background: none;
+                }
+
+                &:last-child {
+                    transform: rotate(45deg)translate(4px);
+                    transform-origin: bottom;
+                }
+
+                &:nth-child(2) {
+                    transform: rotate(-45deg)translate(10px);
+                    transform-origin: bottom;
+                }
+            }
+        }
+    }
+
+    .skCircular {
+        transform: rotate(0deg);
+        top: -200px;
+        left: -200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .skArrow {
+        opacity: 1;
+    }
 }

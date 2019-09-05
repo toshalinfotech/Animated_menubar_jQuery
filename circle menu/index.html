@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="skin.css" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 </head>
+
 <body>
-    <div class="main">
-        <div class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="mainwrapper">
+        <div class="skMenuBar" onclick="toggleBar()">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        
-    </div>
-    <div class="sub">
-        <ul>
-            <li><i class="fas fa-cog"></i></li>
-            <li><i class="fas fa-user-alt"></i></li>
-            <li><i class="fas fa-envelope"></i></li>
-        </ul>
-        <ul>
+        <div class="skCircular">
+            <ul>
                 <li><i class="fas fa-cog"></i></li>
                 <li><i class="fas fa-user-alt"></i></li>
                 <li><i class="fas fa-envelope"></i></li>
             </ul>
+            <ul>
+                <li><i class="fas fa-comments"></i></li>
+                <li><i class="fas fa-tools"></i></li>
+                <li><i class="fas fa-power-off"></i></li>
+            </ul>
+            <ul>
+                <li><i class="fas fa-cog"></i></li>
+                <li><i class="fas fa-user-alt"></i></li>
+                <li><i class="fas fa-envelope"></i></li>
+            </ul>
+        </div>
+        <div class="skArrow" onclick="toggleArrow()">
+            <i class="fas fa-angle-up"></i>
+        </div>
     </div>
-    <div class="arrow">
-        <i class="fas fa-angle-up"></i>
-    </div>
+    
+<script>
+    function toggleBar() {
+        $(".mainwrapper").toggleClass("mainwrapperscale");
+    }
+    function toggleArrow() {
+        $(".skCircular").toggleClass("arrowSubRotate");
+    }
+</script>
+
 </body>
 </html>

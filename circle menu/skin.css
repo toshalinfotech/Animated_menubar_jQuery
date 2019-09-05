@@ -1,5 +1,5 @@
 /********************************************************************/
-/* Website Developed by : Blue Sombrero 							*/
+/* Created by Rimpal Prajapati
 /********************************************************************/
 * {
   margin: 0;
@@ -10,7 +10,7 @@ body {
   background: #8c7373;
 }
 
-.main {
+.skMenuBar {
   height: 200px;
   width: 200px;
   background: #000;
@@ -23,7 +23,7 @@ body {
   transition: .3s;
 }
 
-.main .icon {
+.skMenuBar .icon {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -32,7 +32,7 @@ body {
   cursor: pointer;
 }
 
-.main .icon span {
+.skMenuBar .icon span {
   height: 5px;
   width: 30px;
   color: #fff;
@@ -45,33 +45,15 @@ body {
   transition: .5s;
 }
 
-.main .icon span:first-child {
+.skMenuBar .icon span:first-child {
   bottom: 35%;
 }
 
-.main .icon span:nth-child(2) {
+.skMenuBar .icon span:nth-child(2) {
   bottom: 25%;
 }
 
-.cross span {
-  transform: translateY(10px);
-}
-
-.cross span:first-child {
-  background: none;
-}
-
-.cross span:last-child {
-  transform: rotate(45deg) translate(4px);
-  transform-origin: bottom;
-}
-
-.cross span:nth-child(2) {
-  transform: rotate(-45deg) translate(10px);
-  transform-origin: bottom;
-}
-
-.sub {
+.skCircular {
   height: 400px;
   width: 400px;
   background: #c0c0c0;
@@ -84,7 +66,7 @@ body {
   transition: .8s;
 }
 
-.sub ul li {
+.skCircular ul li {
   position: absolute;
   display: inline-block;
   transform: translateX(50%);
@@ -92,50 +74,74 @@ body {
   cursor: pointer;
 }
 
-.sub ul li:first-child {
+.skCircular ul li:first-child {
   top: 210px;
   right: 50px;
 }
 
-.sub ul li:nth-child(2) {
+.skCircular ul li:nth-child(2) {
   top: 276px;
   right: 90px;
 }
 
-.sub ul li:last-child {
+.skCircular ul li:last-child {
   top: 330px;
   right: 170px;
 }
 
-.sub ul li i:hover {
+.skCircular ul li i:hover {
   color: #540d0d;
 }
 
-.sub ul:nth-child(2) {
+.skCircular ul:nth-child(2) {
   transform: translateX(-195px) translateY(194px) rotate(-90deg);
 }
 
-.subRotate {
+.skArrow {
+  position: absolute;
+  left: 230px;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.mainwrapperscale .skCircular.arrowSubRotate {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.mainwrapperscale .skMenuBar {
+  left: -110px;
+  top: -110px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mainwrapperscale .skMenuBar .icon span {
+  transform: translateY(10px);
+}
+
+.mainwrapperscale .skMenuBar .icon span:first-child {
+  background: none;
+}
+
+.mainwrapperscale .skMenuBar .icon span:last-child {
+  transform: rotate(45deg) translate(4px);
+  transform-origin: bottom;
+}
+
+.mainwrapperscale .skMenuBar .icon span:nth-child(2) {
+  transform: rotate(-45deg) translate(10px);
+  transform-origin: bottom;
+}
+
+.mainwrapperscale .skCircular {
   transform: rotate(0deg);
   top: -200px;
   left: -200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.arrow {
-  position: absolute;
-  left: 230px;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.arrowSubRotate {
-  transform: rotate(90deg);
-  transform-origin: center;
-}
-
-.mainScale {
-  left: -110px;
-  top: -110px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.mainwrapperscale .skArrow {
+  opacity: 1;
 }

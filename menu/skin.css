@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-.main .sub {
+.skMainWrapper .skBlock {
   position: absolute;
   top: 15%;
   left: 50%;
@@ -22,44 +22,44 @@
   transition: 1s;
 }
 
-.main i {
+.skMainWrapper i {
   font-size: 80px;
   margin: 20px;
 }
 
-.main h3 {
+.skMainWrapper h3 {
   font-size: 20px;
 }
 
-.main .a1 {
+.skMainWrapper .skSetting {
   background-color: #9400D3;
 }
 
-.main .a2 {
+.skMainWrapper .skServices {
   background-color: #4B0082;
 }
 
-.main .a3 {
+.skMainWrapper .skProducts {
   background-color: #0000FF;
 }
 
-.main .a4 {
+.skMainWrapper .skLogout {
   background-color: #00FF00;
 }
 
-.main .a5 {
+.skMainWrapper .skGallery {
   background-color: #FFFF00;
 }
 
-.main .a6 {
+.skMainWrapper .skAbout {
   background-color: #FF7F00;
 }
 
-.main .a7 {
+.skMainWrapper .skContact {
   background-color: #FF0000;
 }
 
-.main .a8 {
+.skMainWrapper .skOpen {
   background-color: #5f5e5e;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
   font-family: cambria;
@@ -67,7 +67,7 @@
   color: #fff;
 }
 
-.main .a8 .suba8 {
+.skMainWrapper .skOpen .skJoin {
   height: 20px;
   width: 20px;
   background: linear-gradient(#D3D3D3, #808080);
@@ -80,78 +80,74 @@
   font-weight: normal;
 }
 
-.add .a1 {
-  transform: rotate(60deg);
+.skSwipe .skBlock {
   transform-origin: bottom;
+}
+
+.skSwipe .skSetting {
+  transform: rotate(60deg);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.add .a1:hover {
+.skSwipe .skSetting:hover {
   transform: rotate(70deg);
 }
 
-.add .a2 {
+.skSwipe .skServices {
   transform: rotate(40deg);
-  transform-origin: bottom;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.add .a2:hover {
+.skSwipe .skServices:hover {
   transform: rotate(50deg);
 }
 
-.add .a3 {
+.skSwipe .skProducts {
   transform: rotate(20deg);
-  transform-origin: bottom;
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
-.add .a3:hover {
+.skSwipe .skProducts:hover {
   transform: rotate(30deg);
 }
 
-.add .a4 {
+.skSwipe .skLogout {
   transform: rotate(0deg);
-  transform-origin: bottom;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.add .a4:hover {
+.skSwipe .skLogout:hover {
   transform: rotate(10deg);
 }
 
-.add .a5 {
+.skSwipe .skGallery {
   transform: rotate(-20deg);
-  transform-origin: bottom;
   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
 }
 
-.add .a5:hover {
+.skSwipe .skGallery:hover {
   transform: rotate(-10deg);
 }
 
-.add .a6 {
+.skSwipe .skAbout {
   transform: rotate(-40deg);
-  transform-origin: bottom;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
-.add .a6:hover {
+.skSwipe .skAbout:hover {
   transform: rotate(-30deg);
 }
 
-.add .a7 {
+.skSwipe .skContact {
   transform: rotate(-60deg);
-  transform-origin: bottom;
   box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.5);
 }
 
-.add .a7:hover {
+.skSwipe .skContact:hover {
   transform: rotate(-50deg);
 }
 
-.add .a8 {
+.skSwipe .skOpen {
   transform: rotate(-80deg);
-  transform-origin: bottom;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
 }

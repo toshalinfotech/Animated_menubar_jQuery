@@ -1,7 +1,7 @@
 {
-  "name": "Apollo",
+  "name": "Menu",
   "version": "1.0.0",
-  "description": "Apollo Theme",
+  "description": "Menu",
   "devDependencies": {
       "gulp": "3.9.1",
       "gulp-sass": "3.1.0"
